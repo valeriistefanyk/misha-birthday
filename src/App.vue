@@ -30,9 +30,6 @@
 
     <v-app-bar app src="@/assets/nav.jpg" dark>
       <v-app-bar-nav-icon @click="drawer =! drawer"></v-app-bar-nav-icon>
-      <v-card class="ma-3 pa-6" outlined tile>
-        <img alt="Avatar" src="@/assets/star1.png" width="100px">
-      </v-card>
       <v-toolbar-title class="title-font">
         VM Core Production
       </v-toolbar-title>
@@ -49,7 +46,6 @@
         <app-content></app-content>
       </v-container>
     </v-main>
-
   </v-app>
 </template>
 

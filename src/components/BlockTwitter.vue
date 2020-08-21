@@ -1,5 +1,12 @@
 <template>
   <v-container grid-list-lg>
+    <v-alert
+      color="indigo"
+      dark
+      class="text-center"
+    >
+      Некоторые знакомые из Твиттера и Ютуба (премиум) попросили передать поздравления
+    </v-alert>
     <v-layout row wrap>
       <v-flex xs12 sm6 md4 v-for="(person) in people_set1" :key="person.name">
         <v-card
@@ -102,7 +109,6 @@
       </v-flex>
     </v-layout>
 
-
     <v-row justify="center">
     <v-dialog v-model="dialog" persistent max-width="290">
       <v-card>
@@ -114,6 +120,7 @@
       </v-card>
     </v-dialog>
   </v-row>
+
   </v-container>
 </template>
 
@@ -199,7 +206,7 @@ export default {
           name: "Терентьев",
           likes: 0,
           color: "#2611AA",
-          text: "Сам пи**рас",
+          text: "Сам пи**рас(((",
           picture: "terentos.jpg",
           style:
             "linear-gradient(0deg, rgba(243,251,36,1) 0%, rgba(49,171,91,1) 17%, rgba(175,18,186,1) 36%, rgba(181,88,48,1) 55%, rgba(195,23,50,1) 76%, rgba(58,56,222,1) 100%)",
@@ -213,6 +220,5 @@ export default {
 <style scoped>
   .my-title {
     font-family: 'Pacifico', cursive;
-    font-size: 100px;
   }
 </style>
