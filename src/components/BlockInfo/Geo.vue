@@ -1,36 +1,25 @@
 <template>
-    <div id="gsInformerID-I7LkTU85S18f3D" class="gsInformer" style="width:325px;height:174px">
-    <div class="gsIContent">
-        <div id="cityLink">
-            <a href="https://www.gismeteo.ua/ua/weather-kyiv-4944/" target="_blank" title="Погода у Києві">
-                <img src="https://www.gismeteo.ua/assets/flat-ui/img/gisloader.svg" width="24" height="24" alt="Погода у Києві">
-            </a>
-            </div>
-        <div class="gsLinks">
-            <table>
-                <tr>
-                    <td>
-                        <div class="leftCol">
-                            <a href="https://www.gismeteo.ua/ua/" target="_blank" title="Погода">
-                                <img alt="Погода" src="https://www.gismeteo.ua/assets/flat-ui/img/logo-mini2.png" align="middle" border="0" width="11" height="16" />
-                                <img src="https://www.gismeteo.ua/assets/flat-ui/img/informer/gismeteo.svg" border="0" align="middle" style="left: 5px; top:1px">
-                            </a>
-                            </div>
-                            <div class="rightCol">
-                                <a href="https://www.gismeteo.ua/ua/weather-kyiv-4944/2-weeks/" target="_blank" title="Погода у Києві на 2 тижні">
-                                    <img src="https://www.gismeteo.ua/assets/flat-ui/img/informer/forecast-2weeks.ua.svg" border="0" align="middle" style="top:auto" alt="Погода у Києві на 2 тижні">
-                                </a>
-                            </div>
-                        </td>
-                </tr>
-            </table>
-        </div>
+  <div class="mx-auto">
+      <v-row justify="center">
+    <div class="meteoprog-informer" style="width: 280px" data-params='{"city_ids":"2533","domain":"https://meteoprog.ua/ua","id":"5f47de812bac92e5458b468d","lang":"ua"}'>
+
+      
+        <a title="Погода в місті Київ" target="_blank" href="https://meteoprog.ua/ua/weather/Kyiv">
+          <img style="margin: 0 auto; display: block" src="https://meteoprog.ua/images/preloader.gif" alt="Loading...">
+        </a>
+        <a target="_blank" class="constructor__met2wlink" href="https://meteoprog.ua/ua/review/Kyiv/">Погода на 2 тижні</a>
+      
+
+      <a class="constructor__metlink" target="_blank" href="https://meteoprog.ua/ua">
+        <img style="display: block; margin: 0 auto;" alt="Meteoprog" src="https://meteoprog.ua/images/meteoprog-inf.png">
+      </a>
     </div>
-</div>
+      </v-row>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'BlockGeo'
-    }
+export default {
+  name: "BlockGeo",
+};
 </script>

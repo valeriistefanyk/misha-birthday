@@ -3,15 +3,18 @@
       <v-layout row wrap>
           <v-flex xs12 sm6 md8>
     <v-carousel cycle height="400" hide-delimiter-background show-arrows-on-hover>
-      <v-carousel-item v-for="(slide, i) in slides" :key="i">
-        <v-sheet :color="colors[i]" height="100%">
+      <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="require('../assets/' + img[i])">
+        <v-sheet height="100%" color="rgba(100, 100, 100, 0.1)">
           <v-row class="fill-height" align="center" justify="center">
-            <div class="display-3">{{ slide }} Slide</div>
+            <div class="display-1">{{ slide }}</div>
           </v-row>
+          
         </v-sheet>
       </v-carousel-item>
     </v-carousel>
           </v-flex>
+
+
           <v-flex xs12 sm6 md4>
         
       <v-hover v-slot:default="{ hover }">
@@ -41,12 +44,19 @@
           'deep-purple accent-4',
         ],
         slides: [
-          'First',
-          'Second',
-          'Third',
-          'Fourth',
-          'Fift'
-        ]
+          'Миша отдыхает',
+          'Миша пьет пывце',
+          'Миша сдал ЗНО',
+          'Миша с Олегом',
+          'Миша спит в бане'
+        ],
+        img: [
+          '1.jpg',
+          '2.jpg',
+          '4.jpg',
+          '3.jpg',
+          '5.jpg',
+        ],
         }
     }}
 </script>

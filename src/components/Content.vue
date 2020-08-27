@@ -1,17 +1,17 @@
 <template>
   <div>
     <block-alert></block-alert>
-    <block-info></block-info>
     <block-photo></block-photo>
     <block-twitter class="mt-10"></block-twitter>
     <block-youtube></block-youtube>
+    <block-info></block-info>
     <block-parallax class="mt-10"></block-parallax>
     <block-gif class="mt-10"></block-gif>
   </div>
 </template>
 
 <script>
-import BlockInfo from '@/components/BlockInfo';
+import BlockInfo from "@/components/BlockInfo";
 import BlockTwitter from "@/components/BlockTwitter";
 import BlockYoutube from "@/components/BlockYoutube";
 import BlockPhoto from "@/components/BlockPhoto";
