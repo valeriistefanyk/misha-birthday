@@ -86,7 +86,7 @@
             <v-icon large left>mdi-twitter</v-icon>
             <span class="title font-weight-light">Twitter</span>
           </v-card-title>
-          <v-card-text class="headline font-weight-bold">{{ person.text }}</v-card-text>
+          <v-card-text class="headline font-weight-bold" v-html="person.text"></v-card-text>
 
           <v-card-actions>
             <v-list-item class="grow">
@@ -199,7 +199,7 @@ export default {
           name: "Дымхаузен",
           likes: "10",
           color: "rgba(17, 184, 53, 0.7)",
-          text: 'С ДР гламурный мазаф*ака😈 И добро пожаловать в наше царство - баронов Дымхаузенов 🤴🏼🙈 Покурил Milano и жизнь стала ярче 🤙🏼😎👱🏻‍♀️',
+          text: 'С ДР гламурный мазаф*ака😈 И добро пожаловать в наше царство - баронов Дымхаузенов 🤴🏼🙈 Покурил <span style="text-decoration: line-through">Milano</span> Jibiar и жизнь стала ярче 🤙🏼😎👱🏻‍♀️',
           picture: "hookahking.jpg",
         },
         {
